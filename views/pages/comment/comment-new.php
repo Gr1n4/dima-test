@@ -31,11 +31,11 @@ include_once dir . '/views/layouts/header.php';
     </div>
     <div class="form-group">
       <label>Phone number</label>
-      <input type="tel" class="form-control" name="phone">
+      <input type="tel" class="form-control" name="phone" maxlength="12">
     </div>
     <div class="form-group">
       <label>E-mail</label>
-      <input type="email" class="form-control" name="email">
+      <input type="email" class="form-control" name="email" pattern='/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/'>
     </div>
     <div class="form-group">
       <label>Comment <i class="fa fa-star"></i></label>
