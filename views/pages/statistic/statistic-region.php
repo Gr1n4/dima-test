@@ -11,12 +11,12 @@ include_once dir . '/views/layouts/header.php';
     </tr>
     </thead>
     <tbody>
-    <? foreach ($cities as $city): ?>
+    <?php foreach ($cities as $city): ?>
       <tr>
-        <td><a href="<? echo '/statistic/city/' . $city['id']; ?>"><? echo $city['city'] ?></a></td>
-        <td><a href="<? echo '/statistic/city/' . $city['id']; ?>"><? echo $city['count_comment'] ?></a></td>
+        <td><a href="<?php echo '/statistic/city/' . $city['id']; ?>"><?php echo $city['city'] ?></a></td>
+        <td><a href="<?php echo '/statistic/city/' . $city['id']; ?>"><?php echo $city['count_comment'] ?></a></td>
       </tr>
-    <? endforeach; ?>
+    <?php endforeach; ?>
     </tbody>
   </table>
 </div>

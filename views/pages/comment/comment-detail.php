@@ -20,7 +20,7 @@ include_once dir . '/views/layouts/header.php';
         <p class="lead">Region</p>
       </div>
       <div class="col-lg-6">
-        <p class="lead"><? echo $comment['region'] ?></p>
+        <p class="lead"><?php echo $comment['region'] ?></p>
       </div>
     </div>
     <div class="row">
@@ -28,7 +28,7 @@ include_once dir . '/views/layouts/header.php';
         <p class="lead">City</p>
       </div>
       <div class="col-lg-6">
-        <p class="lead"><? echo $comment['city'] ?></p>
+        <p class="lead"><?php echo $comment['city'] ?></p>
       </div>
     </div>
     <div class="row">
@@ -36,7 +36,7 @@ include_once dir . '/views/layouts/header.php';
         <p class="lead">Phone number</p>
       </div>
       <div class="col-lg-6">
-        <p class="lead"><? echo $comment['phone'] ?></p>
+        <p class="lead"><?php echo $comment['phone'] ?></p>
       </div>
     </div>
     <div class="row">
@@ -44,13 +44,13 @@ include_once dir . '/views/layouts/header.php';
         <p class="lead">E-mail</p>
       </div>
       <div class="col-lg-6">
-        <p class="lead"><? echo $comment['email'] ?></p>
+        <p class="lead"><?php echo $comment['email'] ?></p>
       </div>
     </div>
     <hr class="my-4">
-    <p><? echo $comment['comment']; ?></p>
+    <p><?php echo $comment['comment']; ?></p>
     <p class="lead">
-      <a class="btn btn-primary" href="<? echo '/comment/remove/' . $comment['id']; ?>" role="button">Remove</a>
+      <a class="btn btn-primary" href="<?php echo '/comment/remove/' . $comment['id']; ?>" role="button">Remove</a>
     </p>
   </div>
 </div>

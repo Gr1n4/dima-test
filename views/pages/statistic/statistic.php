@@ -11,12 +11,12 @@ include_once dir . '/views/layouts/header.php';
     </tr>
     </thead>
     <tbody>
-    <? foreach ($regionsMoreFive as $region): ?>
+    <?php foreach ($regionsMoreFive as $region): ?>
       <tr>
-        <td><a href="<? echo '/statistic/region/' . $region['id']; ?>"><? echo $region['title'] ?></a></td>
-        <td><a href="<? echo '/statistic/region/' . $region['id']; ?>"><? echo $region['count_comment'] ?></a></td>
+        <td><a href="<?php echo '/statistic/region/' . $region['id']; ?>"><?php echo $region['title'] ?></a></td>
+        <td><a href="<?php echo '/statistic/region/' . $region['id']; ?>"><?php echo $region['count_comment'] ?></a></td>
       </tr>
-    <? endforeach; ?>
+    <?php endforeach; ?>
     </tbody>
   </table>
   <table class="table">
@@ -27,12 +27,12 @@ include_once dir . '/views/layouts/header.php';
       </tr>
     </thead>
     <tbody>
-    <? foreach ($regions as $region): ?>
+    <?php foreach ($regions as $region): ?>
       <tr>
-        <td><a href="<? echo '/statistic/region/' . $region['id']; ?>"><? echo $region['title'] ?></a></td>
-        <td><a href="<? echo '/statistic/region/' . $region['id']; ?>"><? echo $region['count_comment'] ?></a></td>
+        <td><a href="<?php echo '/statistic/region/' . $region['id']; ?>"><?php echo $region['title'] ?></a></td>
+        <td><a href="<?php echo '/statistic/region/' . $region['id']; ?>"><?php echo $region['count_comment'] ?></a></td>
       </tr>
-    <? endforeach; ?>
+    <?php endforeach; ?>
     </tbody>
   </table>
 </div>
